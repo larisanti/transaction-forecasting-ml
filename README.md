@@ -107,8 +107,8 @@ LIMIT 10;
 
 ## Prerequisites
 
-* A Google Cloud Project.
-* Access to BigQuery.
+* A Google Cloud Project
+* Access to BigQuery
 
 ## Dataset
 
