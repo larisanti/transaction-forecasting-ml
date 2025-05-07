@@ -8,26 +8,33 @@ The project utilizes the `bigquery-public-data.google_analytics_sample` dataset 
 
 This lab involves the following steps:
 
-1. Create a BigQuery dataset
-   
-2. Create a BigQuery ML model: SQL query in the file `01_create_model.sql`
-   ![Creating a BigQuery ML model](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/1.1.png)
-   ![Creating a BigQuery ML model - Evaluation](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/1.2.png)
-   
-3. Evaluate the model: SQL query in the file `02_evaluate_model.sql`
-   ![Evaluating the model](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/2.png)
+1.  **Create a BigQuery dataset.**
+2.  **Create a BigQuery ML model:**
+    * Execute the SQL query in [`01_create_model.sql`](./01_create_model.sql).
+    * Visualizations of this step:
+        * ![Creating a BigQuery ML model](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/1.1.png)
+        * ![Creating a BigQuery ML model - Evaluation](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/1.2.png)
+3.  **Evaluate the model:**
+    * Run the SQL query in [`02_evaluate_model.sql`](./02_evaluate_model.sql) to assess the model's performance.
+    * Visualization:
+        * ![Evaluating the model](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/2.png)
+4.  **Predict purchases per country:**
+    * Use the SQL query in [`03_predict_country.sql`](./03_predict_country.sql) to predict transactions by country.
+    * Visualization:
+        * ![Predicting transactions by country](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/3.png)
+5.  **Predict purchases per user:**
+    * Execute the SQL query in [`04_predict_user.sql`](./04_predict_user.sql) to predict transactions per user.
+    * Visualization:
+        * ![Predicting transactions per user](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/4.png)
 
-4. Predict purchases per country: SQL query in the file `03_predict_country.sql`
-   ![Predicting transactions by country](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/3.png)
+## Prerequisites
 
-5. Predict purchases per user: SQL query in the file `04_predict_user.sql`
-   ![Predicting transactions per user](https://github.com/larisanti/transaction-forecasting-ml/blob/main/Screenshots/4.png)
+* A Google Cloud Project.
+* Access to BigQuery.
 
-### Prerequisites
+## Dataset
 
-- A Google Cloud Project.
-- Access to BigQuery.
+This project utilizes the following public dataset:
 
-### Dataset
+* `bigquery-public-data.google_analytics_sample`
 
-- The project uses the public dataset: `bigquery-public-data.google_analytics_sample`.
