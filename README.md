@@ -2,7 +2,7 @@
 
 This project is a lab exercise completed during the Machine Learning Engineer Learning Path course. It demonstrates a sequence of BigQuery ML queries to build and evaluate a logistic regression model that predicts customer transactions based on website traffic data from Google Analytics.
 
-The project utilizes the `bigquery-public-data.google_analytics_sample` dataset to train and evaluate the model. The model uses features such as operating system, mobile device usage, country, and pageviews to predict whether a visitor will make a transaction.
+The project utilizes the `google_analytics_sample` dataset to train and evaluate the model. The model uses features such as operating system, mobile device usage, country, and pageviews to predict whether a visitor will make a transaction.
 
 ## Workflow
 
